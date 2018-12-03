@@ -1,7 +1,5 @@
 
 
-
-
 #logo {
   background-color: #E34454;
   color: white;
@@ -42,7 +40,7 @@ header {
 
 
 img {
-  width: 10%;
+  width: 15%;
   height: auto;
 
 }
@@ -63,10 +61,7 @@ hr{
   clear:both;
 }
 
-article {
-    background-color: lightblue;
 
-}
 body {
     background-color: lightblue;
 }
@@ -95,4 +90,3 @@ li a {
 li a:hover {
 	background-color: #111;
 }
-
