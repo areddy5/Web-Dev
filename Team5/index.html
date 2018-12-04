@@ -10,26 +10,35 @@
 
   <img class = "align1" src="stevensLogo.png"/>
   <img class = "align" src ="logo_large.png"/>
+
   <h1>Duck Life</h1>
 
 
-  <nav>
-        <ul>
-            <li><a href="/">Date</a>
-            <li><a href="/">Category</a>
-            <li><a href="/">Location</a>
-            <li><a href="/">Price</a>
-        </ul>
+  <div class="dropdown">
+		<button onclick="drop()" class="dropbtn">Menu</button>
+		<div id="myDropdown" class="dropdown-content">
+      <a href="index.html">HomePage</a>
+			<a href="contactus.html">Contact Us</a>
+			<a href="feedback.html">Feedback Form</a>
 
-  </nav>
+		</div>
+	</div>
+
 </header>
 
 <body>
 
+<hr/>
   <article>
 
     <h2>Fall Harvest</h2>
-    <img class = "div1" src="HarFest.PNG"/>
+    <img id="myImg" class = "div1" src="HarFest.PNG" onclick = "myFunction()" alt="Harvest Festival">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
     <p1>Oct 20.</p1>
     <p2>Free activities for children including live performance, pony rides,
        petting zoo, horse & carriage, trackless train, inflatables, pumpkin painting,
@@ -46,9 +55,13 @@
   <article>
 
     <h2>Sunset Champagne Ghost Ship Halloween at Majesty Yacht</h2>
+    <img id="myImg1" class = "div1" src="champangeGhostHalloween.jpg" onclick = "myFunction1()" alt="Halloween Yacht">
+    <div id="myModal1" class="modal">
+      <span class="close1">&times;</span>
+      <img class="modal-content" id="img02">
+      <div id="caption1"></div>
+    </div>
 
-
-    <img class = "div1"src="champangeGhostHalloween.jpg"/>
     <p1>Oct 27.</p1>
     <p2> Age 21+. If you've ever been to a HalloweenCruises.com event before,
       then you know that you're in for something good. This 3-hour cruise will feature your favorite music being served up by a live DJ and a cash bar serving up any cocktail you could possibly imagine. Be sure to come decked out in your Halloween gear, because this epic event will bring in folks with the top costumes in the city.
@@ -59,21 +72,14 @@
 
   <article>
 
-    <h2>Star Wars Trivia Night</h2>
-    <img class = "div1" src="starWarsTrivia.jpg"/>
-    <p1>Nov 7.</p1>
-     <p2>Five challenging rounds with theme-reinforcing answer sheets, guaranteed to put a
-       smile on your inner nerd's face. 90 minutes of fun while proving you know the most.
-    </p2>
-    <hr />
-  </div>
-  </article>
-
-  <article>
-
     <h2>HoBOOken 5k Run</h2>
+    <img id="myImg3" class = "div1" src="5krun.jpg" onclick = "myFunction3()" alt="5K Run">
+    <div id="myModal3" class="modal">
+      <span class="close3">&times;</span>
+      <img class="modal-content" id="img04">
+      <div id="caption3"></div>
+    </div>
 
-    <img class = "div1" src="5krun.jpg"/>
     <p1> Oct 27.</p1>
       <p2> The race has something for everyone! A gorgeous flat,
       fast course with view of the Hoboken waterfront. Fun, costumed event with judging
@@ -83,12 +89,81 @@
   </article>
 
 
-  <p> If You Want To See Certain Events Added To The Website, Please Provide The Following: </p>
-  <form id="frm1">
-    Event Name: <input type="text" name="fname"><br>
-    Link To Event: <input type="text" name="lname"><br><br>
-    <input type="button" onclick="myFunction()" value="Submit">
-  </form>
+  <article>
+
+    <h2>Star Wars Trivia Night</h2>
+    <img id="myImg2" class = "div1" src="starWarsTrivia.jpg" onclick = "myFunction2()" alt="Star Wars Trivia Night">
+    <div id="myModal2" class="modal">
+      <span class="close2">&times;</span>
+      <img class="modal-content" id="img03">
+      <div id="caption2"></div>
+    </div>
+    <p1>Nov 7.</p1>
+     <p2>Five challenging rounds with theme-reinforcing answer sheets, guaranteed to put a
+       smile on your inner nerd's face. 90 minutes of fun while proving you know the most.
+    </p2>
+    <hr />
+  </div>
+  </article>
+
+
+
+
+
+   <article>
+
+       <h2>Hoboken City Hall Christmas Tree Lighting</h2>
+       <img id="myImg6" class = "div1" src="TreeLighting.png" onclick = "myFunction6()" alt="Christmas Tree Lighting">
+       <div id="myModal6" class="modal">
+         <span class="close6">&times;</span>
+         <img class="modal-content" id="img07">
+         <div id="caption6"></div>
+       </div>
+       <p1>Dec.6</p1>
+        <p2>Local school choirs will perform holiday songs, MC: Elvis the Elf, a special visit from Santa Claus.
+          Hot chocolate provided by Apple Montessori Schools.
+       </p2>
+       <hr />
+     </div>
+     </article>
+   <article>
+
+       <h2>Swim With Santa</h2>
+       <img id="myImg5" class = "div1" src="SwimWithSanta.png" onclick = "myFunction5()" alt="Swim With Santa">
+       <div id="myModal5" class="modal">
+         <span class="close5">&times;</span>
+         <img class="modal-content" id="img06">
+         <div id="caption5"></div>
+       </div>
+       <p1>Dec.16</p1>
+        <p2>Santa might be known for his warm suit and winter warmth, but he can also swim.
+        On December 16th, at the Westfield YMCA, you can swim with Santa from 1-3PM.
+        Reservations are required, but this will definitely give you a new take on holiday photos.
+       </p2>
+       <hr />
+     </div>
+     </article>
+
+
+     <article>
+
+        <h2>Polar Express Train</h2>
+        <img id="myImg4" class = "div1" src="polarExpressTrain.png" onclick = "myFunction4()" alt="Polar Express Train">
+        <div id="myModal4" class="modal">
+          <span class="close4">&times;</span>
+          <img class="modal-content" id="img05">
+          <div id="caption4"></div>
+        </div>
+        <p1>Dec.16-29</p1>
+         <p2>If you want a little more than just a quick visit to see Santa you can book your ticket for the Polar Express.
+         This makes the visit with the man in red a little more interactive with a train ride, singing, and hot chocolate.
+         Kids will love becoming a part of this classic holiday film while topping it off with a visit from Santa.
+        </p2>
+        <hr />
+      </div>
+      </article>
+
+
 
 
 </body>
